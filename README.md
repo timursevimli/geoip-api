@@ -1,5 +1,11 @@
 # GeoIP - API
 
+### Install
+
+```bash
+git lfs clone https://github.com/timursevimli/geoip-api.git
+```
+
 ### Usage
 
 ```bash
