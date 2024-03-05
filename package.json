@@ -1,0 +1,23 @@
+{
+  "name": "geo-api",
+  "version": "0.0.1",
+  "description": "GeoIP API",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "npm run lint && MODE=test node test/unit.js",
+    "lint": "eslint . && prettier -c '**/*.js' '**/*.json' '**/*.md'",
+    "fmt": "prettier --write '**/*.js' '**/*.json' '**/*.md'"
+  },
+  "keywords": [
+    "geoip",
+    "geoapi",
+    "geoipapi"
+  ],
+  "author": "Timur Sevimli <svmlitimur@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5"
+  }
+}
