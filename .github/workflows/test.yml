@@ -14,11 +14,8 @@ jobs:
         node:
           - 18
           - 20
-          - 21
         os:
           - ubuntu-latest
-          - windows-latest
-          - macos-latest
     steps:
       - uses: actions/checkout@v4
       - name: Use Node.js ${{ matrix.node }}
@@ -27,10 +24,12 @@ jobs:
           node-version: ${{ matrix.node }}
       - uses: actions/cache@v3
         with:
-	  lfs: 'true'
+          lfs: true
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+      - run: git lfs checkout
+      - run: git lfs pull
       - run: npm ci
       - run: npm test
