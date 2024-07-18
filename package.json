@@ -1,5 +1,5 @@
 {
-  "name": "geo-api",
+  "name": "@tsevimli/geo-api",
   "version": "0.0.1",
   "description": "GeoIP API",
   "main": "lib/index.js",
