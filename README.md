@@ -3,6 +3,8 @@
 ### Install
 
 ```bash
+npm install @tsevimli/geo-api
+# or
 git lfs clone https://github.com/timursevimli/geoip-api.git
 ```
 
